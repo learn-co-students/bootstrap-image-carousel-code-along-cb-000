@@ -1,0 +1,46 @@
+/*////// MEDIA ////// */
+
+img, video, audio, iframe, table, form {
+	width: 100%;  /* IE */
+	max-width: 100%; /* FF, Safari, Chrome */
+}
+
+
+/*////// LAYOUT STYLES ////// */
+
+.row {
+	margin-bottom: 20px;
+}
+
+/*////// CAROUSEL STYLES ////// */
+
+/* bootsrap is mobile up start with small and work up to larger screen size*/
+
+#carousel-example-generic .item img {
+	height: auto;
+}
+
+.carousel-caption p {
+	display: none;
+}
+
+@media only screen and (min-width: 768px ) { /* small device standard for bootstrap */
+	#carousel-example-generic .item img {
+	height: 384px;
+}
+
+@media only screen and (min-width: 992px ) { /* small device standard for bootstrap */
+	#carousel-example-generic .item img {
+	height: 496px;
+	}
+	.carousel-caption p {
+	display: block;
+	}
+
+}
+
+@media only screen and (min-width: 1200px ) { /* small device standard for bootstrap grid system*/
+	#carousel-example-generic .item img {
+	height: 600px;
+	}
+}
